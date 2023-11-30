@@ -12,11 +12,11 @@ const postRoute=require('./routes/posts')
 const commentRoute=require('./routes/comments')
 const connectDB=async()=>{
     try{
-        await mongoose.connect(process.env.MONGO_URL )
+        await mongoose.connect(process.env.MONGO_URL)
         console.log("db connected")
     }
     catch(err){
-
+console.log(err)
     }
 }
 //middlewares

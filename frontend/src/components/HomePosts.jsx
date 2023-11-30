@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import {URL} from '../url'
 import {IF} from '../url'
+import { Link } from 'react-router-dom'
 const HomePosts = ({post}) => {
 
 
@@ -27,7 +28,7 @@ const HomePosts = ({post}) => {
 </div>
 <p className='text-sm md:text-md'>
 {post.desc.slice(0,400)}
-<span className='text-gray-500 cursor-pointer'>...Read More</span> 
+<Link to="/"><span className='text-gray-500 cursor-pointer'>...Read More</span> </Link>
 </p>
 </div>
     </div>
