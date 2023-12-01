@@ -1,2 +1,2 @@
-export const URL="http://localhost:5002"
-export const IF="http://localhost:5002/images/"
+export const URL="https://dear-blog.onrender.com"
+export const IF="https://dear-blog.onrender.com/images/"
